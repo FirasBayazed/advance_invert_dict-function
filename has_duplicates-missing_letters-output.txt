@@ -1,0 +1,80 @@
+# testing
+>>> print(has_duplicates(1))
+False
+
+>>> print(has_duplicates(11))
+True
+
+>>> print(has_duplicates('Alaa'))
+True
+
+>>> print(has_duplicates('Firas'))   
+False
+
+>>> # examples to make the code clear
+>>> print("___________with repeated characters___________")
+___________with repeated characters___________
+
+>>> print(has_duplicates("firaas"))
+True
+
+>>> print(histogram("firaas"))
+{'f': 1, 'i': 1, 'r': 1, 'a': 2, 's': 1}
+
+>>> print("len of dict:",len(histogram("firaas").keys()))
+len of dict: 5
+
+>>> print("len of str:",len("firaas"))
+len of str: 6
+
+>>> print("___________without repeated characters___________")
+___________without repeated characters___________
+>>> print(has_duplicates("firas"))
+False
+>>> print(histogram("firas"))
+{'f': 1, 'i': 1, 'r': 1, 'a': 1, 's': 1}
+
+>>> print("len of dict:",len(histogram("firas").keys()))
+len of dict: 5
+
+>>> print("len of str:",len("firas"))
+len of str: 5
+
+>>> print("\ntesting:\n")
+testing:
+
+>>> for st in test_dups:
+>>>    if has_duplicates(st):
+>>>        print(st,':',"has duplicates")
+>>>    else:
+>>>        print(st,':',"has no duplicates")
+
+zzz : has duplicates
+dog : has no duplicates
+bookkeeper : has duplicates
+subdermatoglyphic : has no duplicates
+subdermatoglyphics : has duplicates
+
+>>> # testing
+>>> print(missing_letters("firas"))
+bcdeghjklmnopqtuvwxyz
+
+>>> print("'loop over the strings in list test_miss and call missing_letters'\n")
+'loop over the strings in list test_miss and call missing_letters'
+
+>>> for alph in test_miss:
+>>>    # remove spaces from the string
+>>>    alph1 = alph.replace(' ','')
+>>>    # remove repeated letters
+>>>    alph1 = "".join(set(alph1))
+
+>>>    # sort our string an convert it to list so we can compare it with alphabet
+>>>    if sorted(alph1) != sorted(alphabet):
+
+>>>            print(alph,":",'is missing letters',missing_letters(alph))
+>>>    else:
+>>>            print(alph,":",'uses all the letters')
+
+zzz : is missing letters abcdefghijklmnopqrstuvwxy
+subdermatoglyphic : is missing letters fjknqvwxz
+the quick brown fox jumps over the lazy dog : uses all the letters
