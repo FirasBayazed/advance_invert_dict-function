@@ -1,0 +1,9 @@
+the original Dictionary has the informations of each customer:First Name,gender, age, city of residence, country of residence, Spoken languages.
+
+in our iverted dictionary we can see the common factors between the customers, that's why our inverted dictionary will be useful for analytic reasons
+
+output:
+
+{'customer 1': ['Firas', 'Male', 31, 'Munich', 'Germany', 'Arabic', 'English', 'German'], 'custumer 2': ['Adnan', 'Male', 23, 'Damascus', 'Syria', 'Arabic', 'English'], 'customer 3': ['Alaa', 'Male', 33, 'Stockholm', 'Sweden', 'Arabic', 'English', 'Swedish'], 'customer 4': ['Friend', 'Male', 31, 'Damascus', 'Syria', 'Arabic']}
+
+{'Firas': ['customer 1'], 'Male': ['customer 1', 'custumer 2', 'customer 3', 'customer 4'], 31: ['customer 1', 'customer 4'], 'Munich': ['customer 1'], 'Germany': ['customer 1'], 'Arabic': ['customer 1', 'custumer 2', 'customer 3', 'customer 4'], 'English': ['customer 1', 'custumer 2', 'customer 3'], 'German': ['customer 1'], 'Adnan': ['custumer 2'], 23: ['custumer 2'], 'Damascus': ['custumer 2', 'customer 4'], 'Syria': ['custumer 2', 'customer 4'], 'Alaa': ['customer 3'], 33: ['customer 3'], 'Stockholm': ['customer 3'], 'Sweden': ['customer 3'], 'Swedish': ['customer 3'], 'Friend': ['customer 4']}
